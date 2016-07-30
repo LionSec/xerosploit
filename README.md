@@ -31,7 +31,7 @@ Instalation
 Dependencies will be automatically installed.
 
     git clone https://github.com/LionSec/xerosploit
-    cd xerosploit && python install.py
+    cd xerosploit && sudo python install.py
     sudo xerosploit
 
 
