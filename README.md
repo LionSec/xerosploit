@@ -76,7 +76,7 @@ features
 
 Demonstration
 =
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/35QUrtZEV9U/0.jpg)](http://www.youtube.com/watch?v=35QUrtZEV9U)
+https://www.youtube.com/watch?v=35QUrtZEV9U
 
 I have some questions!
 =
