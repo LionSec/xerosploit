@@ -19,7 +19,7 @@ def main():
 
 	print("""
 1) Ubuntu / Kali linux / Others
-2) Parrot OS
+2) Parrot OS (Recommended if you already have installed bettercap , via apt-get)
 """)
 	system0 = raw_input(">>> ")
 	if system0 == "1":
