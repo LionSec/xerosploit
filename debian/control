@@ -1,0 +1,18 @@
+Source: xerosploit
+Section: main/utils
+Priority: extra
+Maintainer: Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Vcs-Git: git://github.com/parrotsec/joomlascan.git
+Vcs-Browser: https://github.com/ParrotSec/joomlascan
+
+Package: xerosploit
+Architecture: all
+Depends: ${misc:Depends}, python, nmap, hping3, build-essential, python-pip, ruby-dev, git, libpcap-dev, libgmp3-dev, python-tabulate,  python-terminaltables
+Description: Xerosploit MITM framework
+ Xerosploit is a penetration testing toolkit whose goal
+ is to perform man in the middle attacks for testing purposes.
+ It brings various modules that allow to realise efficient attacks,
+ and also allows to carry out denial of service attacks and port scanning.
+ Powered by bettercap and nmap.

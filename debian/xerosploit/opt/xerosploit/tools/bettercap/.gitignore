@@ -1,0 +1,14 @@
+*.swp
+*.swo
+*.gem
+*.sh
+.idea
+cert.crt
+cert.key
+cert.pem
+test_*.rb
+test_*.sj
+test_*.conf
+.tags*
+.DS_Store
+hosts

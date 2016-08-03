@@ -1,0 +1,22 @@
+{% extends "!page.html" %}
+{% block sidebartitle %}
+    <a href="https://bettercap.org/" style="margin-bottom: 7px; background: none !important;">
+        <button class="btn btn-info">
+            <i class="fa fa-arrow-left"></i>
+            Return to bettercap.org
+        </button>
+    </a>
+    {{ super() }}
+{% endblock %}
+{% block footer %}
+{{ super() }}
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-65617603-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+{% endblock %}
