@@ -15,11 +15,11 @@ print(""" \033[1;36m
 
 def main():
 
-	print("\033[1;34m\n[++] Please choose your operative system.\033[1;m")
+	print("\033[1;34m\n[++] Please choose your operating system.\033[1;m")
 
 	print("""
 1) Ubuntu / Kali linux / Others
-2) Parrot OS (Recommended if you already have installed bettercap , via apt-get)
+2) Parrot OS
 """)
 	system0 = raw_input(">>> ")
 	if system0 == "1":
@@ -30,8 +30,9 @@ def main():
 	elif system0 == "2":
 		print("\033[1;34m\n[++] Installing Xerosploit ... \033[1;m")
 
-		bet_un = os.system("apt-get remove bettercap") # Remove bettercap to avoid some problems . Installed by default with apt-get .
-		bet_re_ins = os.system("gem install bettercap") # Reinstall bettercap with gem.
+		# commented because parrot now includes the official version of bettercap and keeps it constantly updated
+		#bet_un = os.system("apt-get remove bettercap") # Remove bettercap to avoid some problems . Installed by default with apt-get .
+		#bet_re_ins = os.system("gem install bettercap") # Reinstall bettercap with gem.
 
 		install = os.system("apt-get update && apt-get install -y nmap hping3 build-essential python-pip ruby-dev git libpcap-dev libgmp3-dev && pip install tabulate terminaltables")
 
