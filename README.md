@@ -45,7 +45,7 @@ Tested on
     </tr>
     <tr>
         <td>Ubuntu</td>
-        <td> 16.10  / 15.10 </td>
+        <td> 16.04  / 15.10 </td>
     </tr>
     <tr>
         <td>Kali linux</td>
