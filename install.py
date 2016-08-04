@@ -51,9 +51,8 @@ def main():
 	elif system0 == "2":
 		print("\033[1;34m\n[++] Installing Xerosploit ... \033[1;m")
 
-		# commented because parrot now includes the official version of bettercap and keeps it constantly updated
-		#bet_un = os.system("apt-get remove bettercap") # Remove bettercap to avoid some problems . Installed by default with apt-get .
-		#bet_re_ins = os.system("gem install bettercap") # Reinstall bettercap with gem.
+		bet_un = os.system("apt-get remove bettercap") # Remove bettercap to avoid some problems . Installed by default with apt-get .
+		bet_re_ins = os.system("gem install bettercap") # Reinstall bettercap with gem.
 
 		install = os.system("apt-get update && apt-get install -y nmap hping3 ruby-dev git libpcap-dev libgmp3-dev python-tabulate python-terminaltables")
 
