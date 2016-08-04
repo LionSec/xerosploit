@@ -103,9 +103,7 @@ def main():
 		def scan(): 
 			config0()
 
-			# TODO:
-			# the software should ask for the netmask to scan to not limit the
-			# scanned hosts to 255.255.255.0
+
 			scan = os.popen("nmap " + gateway + "/24 -n -sP ").read()
 
 			f = open('/opt/xerosploit/tools/log/scan.txt','w')
