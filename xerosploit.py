@@ -86,7 +86,7 @@ def main():
 			table = [["IP Address","MAC Address","Gateway","Iface","Hostname"],
 					 ["","","","",""],
 					 [n_ip,n_mac.upper(),gateway,up_interface,n_host]]
-			print (tabulate(table, stralign="center",tablefmt="fancy_grid",headers="firstrow"))
+			print (tabulate(table, stralign="center",tablefmt="fancy_grid",headers="firstrow")).encode('utf-8')
 			print ("")
 
 
@@ -96,7 +96,7 @@ def main():
 			    ['\033[1;36m\nInformation\n', 'XeroSploit is a penetration testing toolkit whose goal is to \nperform man in the middle attacks for testing purposes. \nIt brings various modules that allow to realise efficient attacks.\nThis tool is Powered by Bettercap and Nmap.\033[1;m']
 			]
 			table = DoubleTable(table_datas)
-			print(table.table)
+			print(table.table).encode('utf-8')
 
 
 		# Get a list of all currently connected devices , using Nmap.
