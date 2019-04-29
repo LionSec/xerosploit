@@ -86,7 +86,7 @@ def main():
 			table = [["IP Address","MAC Address","Gateway","Iface","Hostname"],
 					 ["","","","",""],
 					 [n_ip,n_mac.upper(),gateway,up_interface,n_host]]
-			print (tabulate(table, stralign="center",tablefmt="fancy_grid",headers="firstrow"))
+			print (tabulate(table, stralign="center",tablefmt="fancy_grid",headers="firstrow")).encode('utf-8')
 			print ("")
 
 
@@ -96,7 +96,7 @@ def main():
 			    ['\033[1;36m\nInformation\n', 'XeroSploit is a penetration testing toolkit whose goal is to \nperform man in the middle attacks for testing purposes. \nIt brings various modules that allow to realise efficient attacks.\nThis tool is Powered by Bettercap and Nmap.\033[1;m']
 			]
 			table = DoubleTable(table_datas)
-			print(table.table)
+			print(table.table).encode('utf-8')
 
 
 		# Get a list of all currently connected devices , using Nmap.
@@ -125,7 +125,7 @@ def main():
 
 			# Show devices found on your network
 			print("\033[1;36m[+]═══════════[ Devices found on your network ]═══════════[+]\n\033[1;m")
-			print(table.table)
+			print(table.table).encode('utf-8')
 			target_ip()
 
 
@@ -212,7 +212,7 @@ def main():
 									]
 									table = DoubleTable(table_data)
 									print("\033[1;36m\n[+]═════════[ Port scan result for " + target_ips +" ]═════════[+]\n\033[1;m")
-									print(table.table)
+									print(table.table).encode('utf-8')
 									pscan()
 
 								else:
@@ -310,7 +310,7 @@ def main():
 								]
 								table = DoubleTable(table_data)
 								print("\033[1;36m\n[+]═════════[ " + target_ips +" ping statistics  ]═════════[+]\n\033[1;m")
-								print(table.table)
+								print(table.table).encode('utf-8')
 								ping()
 							else:
 								print("\033[1;91m\n[!] Error : Command not found.\033[1;m")
@@ -821,7 +821,7 @@ move        :  Shaking Web Browser content
 deface      :  Overwrite all web pages with your HTML code\n\033[1;m"""]
 						]
 						table = DoubleTable(table_datas)
-						print(table.table)
+						print(table.table).encode('utf-8')
 						option()
 					else:
 						print("\033[1;91m\n[!] Error : Module not found . Type 'help' to view the modules list. \033[1;m")
@@ -841,7 +841,7 @@ deface      :  Overwrite all web pages with your HTML code\n\033[1;m"""]
 		    		["\033[1;36m\nInformation\n", "\nInsert your target IP address.\nMultiple targets : ip1,ip2,ip3,... \nThe 'all' command will target all your network.\n\n\033[1;m"]
 				]
 				table = DoubleTable(table_datas)
-				print(table.table)
+				print(table.table).encode('utf-8')
 				target_ip()
 		# if target = all the network
 			elif target_ips == "all": 
@@ -876,7 +876,7 @@ deface      :  Overwrite all web pages with your HTML code\n\033[1;m"""]
 			    			["\033[1;36m\nInformation\n", "\nManually set  your gateway.\nInsert '0' if you want to choose your default network gateway.\n\033[1;m"]
 						]
 						table = DoubleTable(table_datas)
-						print(table.table)
+						print(table.table).encode('utf-8')
 
 						print("\033[1;32m\n[+] Enter your network gateway.\n\033[1;m")
 						n_gateway = raw_input("\033[1;36m\033[4mXero\033[0m»\033[1;36m\033[4mgateway\033[0m\033[1;36m ➮ \033[1;m").strip()
@@ -903,7 +903,7 @@ deface      :  Overwrite all web pages with your HTML code\n\033[1;m"""]
 			    			["\033[1;36m\nInformation\n", "\nManually set your network interface.\nInsert '0' if you want to choose your default network interface.\n\033[1;m"]
 						]
 						table = DoubleTable(table_datas)
-						print(table.table)
+						print(table.table).encode('utf-8')
 
 						print("\033[1;32m\n[+] Enter your network interface.\n\033[1;m")
 						n_up_interface = raw_input("\033[1;36m\033[4mXero\033[0m»\033[1;36m\033[4miface\033[0m\033[1;36m ➮ \033[1;m").strip()
@@ -970,7 +970,7 @@ help     :  Display this help message.
 exit     :  Close Xerosploit.\n\033[1;m"""]
 					]
 					table = DoubleTable(table_datas)
-					print(table.table)
+					print(table.table).encode('utf-8')
 
 
 				else:
