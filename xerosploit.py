@@ -295,6 +295,11 @@ def main():
 							elif action_ping == "run":
 								print("\033[1;34m\n[++] PING " + target_ips + " (" + target_ips + ") 56(84) bytes of data ... \n\033[1;m")
 								ping_cmd = os.popen("ping -c 5 " + target_ips).read()
+								
+								# adding this small os detection functionality to enhance the ping result
+								# so that it will also become able to detect the target os while execution of this ping option of the script
+								
+								detect_os = os.system("nmap -sV -O " + target_ips)
 								fping = open('/opt/xerosploit/tools/log/ping.txt','w') #Save ping result , then grep some informations.
 								fping.write(ping_cmd)
 								fping.close()
@@ -305,8 +310,8 @@ def main():
 								ping_time = os.popen("grep packets /opt/xerosploit/tools/log/ping.txt | awk '{print $10}'").read()
 
 								table_data = [
-				    				['Transmitted', 'Received', 'Loss','Time'],
-				    				[ping_transmited, ping_receive, ping_lost, ping_time]
+				    				['Transmitted', 'Received', 'Loss','Time' , 'Target_OS_Detection'],
+				    				[ping_transmited, ping_receive, ping_lost, ping_time , detect_os]
 								]
 								table = DoubleTable(table_data)
 								print("\033[1;36m\n[+]═════════[ " + target_ips +" ping statistics  ]═════════[+]\n\033[1;m")
