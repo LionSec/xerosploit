@@ -39,6 +39,37 @@ Dependencies will be automatically installed.
     git clone https://github.com/LionSec/xerosploit
     cd xerosploit && sudo python install.py
     sudo xerosploit
+    
+    
+    
+    
+Manual Instalation (If in any case above mathod does't work for you, try following steps):
+=   
+Add Debian Repository:
+$ sudo nano /etc/apt/sources.list
+
+Add following link to "sources.list" file:
+deb http://deb.debian.org/debian/ buster main
+
+Install Dependencies:
+$ sudo apt update && sudo apt install python-pip-whl=18.1-5 python-all-dev  python-setuptools python-wheel python-pip
+
+Download and Run Official Packages:
+$ git clone https://github.com/LionSec/xerosploit
+$ cd xerosploit && sudo python install.py
+$ sudo apt install python3-terminaltables
+$ sudo xerosploit
+
+
+**Issues:**
+Real-time Sniffing logs doesn't work out of the box, you need to run this command each time to monitor real-time logs:
+
+**See Logs File:**
+$ ls /opt/xerosploit/xerosniff
+
+**Monitor Logs in Real-Time: (change file name to your log file)**
+$ sudo tail -f /opt/xerosploit/xerosniff/LOG_FILE.log
+
 
 
 Tested on
@@ -53,7 +84,7 @@ Tested on
 
 
 
-features 
+Features 
 =
 - Port scanning
 - Network mapping
@@ -77,16 +108,4 @@ I have some questions!
 
 Please visit https://github.com/LionSec/xerosploit/issues
 
-Donations
-=
-- Paypal : https://www.paypal.me/lionsec
-- Bitcoin : 12dM5kZjYMizNuXaqu7QZBLNDkXjfKYpRD
 
-
-Contact
-=
-- Website : https://neodrix.com
-- Youtube : https://youtube.com/inf98es
-- Facebook : https://facebook.com/in98
-- Twitter: @LionSec1
-- Email : informatic98es@gmail.com
