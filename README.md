@@ -43,7 +43,7 @@ Dependencies will be automatically installed.
     
     
     
-Manual Instalation (If in any case above mathod does't work for you, try following steps):
+Manual Setup (If in any case above mathod does't work for you, try following steps):
 =   
     Add Debian Repository:
     $ sudo nano /etc/apt/sources.list
@@ -52,7 +52,7 @@ Manual Instalation (If in any case above mathod does't work for you, try followi
     deb http://deb.debian.org/debian/ buster main
 
     Install Dependencies:
-    $ sudo apt update && sudo apt install python-pip-whl=18.1-5 python-all-dev  python-setuptools python-wheel python-pip
+    $ sudo apt update && sudo apt install python-pip-whl=18.1-5 python-all-dev python-setuptools python-wheel python-pip
 
     Download and Run Official Packages:
     $ git clone https://github.com/LionSec/xerosploit
@@ -61,17 +61,17 @@ Manual Instalation (If in any case above mathod does't work for you, try followi
     $ sudo xerosploit
 
 
-    **Issues:**
+Issues:
+=
     Real-time Sniffing logs doesn't work out of the box, you need to run this command each time to monitor real-time logs:
 
-    **See Logs File:**
+    See Logs File:
     $ ls /opt/xerosploit/xerosniff
 
-    **Monitor Logs in Real-Time: (change file name to your log file)**
+    Monitor Logs in Real-Time: (change file name to your log file)
     $ sudo tail -f /opt/xerosploit/xerosniff/LOG_FILE.log
-
-
-
+    
+    
 Tested on
 =
 
