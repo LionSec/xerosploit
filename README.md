@@ -36,7 +36,7 @@ Dependencies will be automatically installed.
     Add this:
     deb http://deb.debian.org/debian/ buster main
     
-    git clone https://github.com/LionSec/xerosploit
+    git clone https://github.com/FazalMahmood/xerosploit/
     cd xerosploit && sudo python install.py
     sudo xerosploit
     
