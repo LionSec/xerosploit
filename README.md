@@ -30,6 +30,12 @@ Instalation
 =
 Dependencies will be automatically installed.
 
+    Add Debian Repository:
+    $ sudo nano /etc/apt/sources.list
+    
+    Add this:
+    deb http://deb.debian.org/debian/ buster main
+    
     git clone https://github.com/LionSec/xerosploit
     cd xerosploit && sudo python install.py
     sudo xerosploit
@@ -40,20 +46,8 @@ Tested on
 
 <table>
     <tr>
-        <th>Operative system</th>
-        <th> Version </th>
-    </tr>
-    <tr>
-        <td>Ubuntu</td>
-        <td> 16.04  / 15.10 </td>
-    </tr>
-    <tr>
-        <td>Kali linux</td>
-        <td> Rolling / Sana</td>
-    </tr>
-    <tr>
-        <td>Parrot OS</td>
-        <td>3.1 </td>
+        <td>Kali Linux</td>
+        <td>2020.2 , 2020.3</td>
     </tr>
 </table>
 
