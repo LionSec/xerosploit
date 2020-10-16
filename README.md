@@ -4,7 +4,7 @@
 [![Build](https://img.shields.io/badge/Supported_OS-linux-orange.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
-Xerosploit
+Xerosploit (This is a Fork to fix Terminaltables Error and other Installation Issues on Latest Operating Systems)
 =
 Xerosploit is a penetration testing toolkit whose goal is to perform man in the middle attacks for testing purposes. It brings various modules that allow to realise efficient attacks, and also allows to carry out denial of service attacks and port scanning.
 Powered by <a href="https://www.bettercap.org"> bettercap</a> and <a href="https://www.bettercap.org"> nmap</a>.
@@ -45,30 +45,30 @@ Dependencies will be automatically installed.
     
 Manual Instalation (If in any case above mathod does't work for you, try following steps):
 =   
-Add Debian Repository:
-$ sudo nano /etc/apt/sources.list
+    Add Debian Repository:
+    $ sudo nano /etc/apt/sources.list
 
-Add following link to "sources.list" file:
-deb http://deb.debian.org/debian/ buster main
+    Add following link to "sources.list" file:
+    deb http://deb.debian.org/debian/ buster main
 
-Install Dependencies:
-$ sudo apt update && sudo apt install python-pip-whl=18.1-5 python-all-dev  python-setuptools python-wheel python-pip
+    Install Dependencies:
+    $ sudo apt update && sudo apt install python-pip-whl=18.1-5 python-all-dev  python-setuptools python-wheel python-pip
 
-Download and Run Official Packages:
-$ git clone https://github.com/LionSec/xerosploit
-$ cd xerosploit && sudo python install.py
-$ sudo apt install python3-terminaltables
-$ sudo xerosploit
+    Download and Run Official Packages:
+    $ git clone https://github.com/LionSec/xerosploit
+    $ cd xerosploit && sudo python install.py
+    $ sudo apt install python3-terminaltables
+    $ sudo xerosploit
 
 
-**Issues:**
-Real-time Sniffing logs doesn't work out of the box, you need to run this command each time to monitor real-time logs:
+    **Issues:**
+    Real-time Sniffing logs doesn't work out of the box, you need to run this command each time to monitor real-time logs:
 
-**See Logs File:**
-$ ls /opt/xerosploit/xerosniff
+    **See Logs File:**
+    $ ls /opt/xerosploit/xerosniff
 
-**Monitor Logs in Real-Time: (change file name to your log file)**
-$ sudo tail -f /opt/xerosploit/xerosniff/LOG_FILE.log
+    **Monitor Logs in Real-Time: (change file name to your log file)**
+    $ sudo tail -f /opt/xerosploit/xerosniff/LOG_FILE.log
 
 
 
