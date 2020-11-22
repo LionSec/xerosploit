@@ -4,7 +4,7 @@
 [![Build](https://img.shields.io/badge/Supported_OS-linux-orange.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
-Xerosploit
+Xerosploit (This is a Fork to fix Terminaltables Error and other Installation Issues on Latest Operating Systems)
 =
 Xerosploit is a penetration testing toolkit whose goal is to perform man in the middle attacks for testing purposes. It brings various modules that allow to realise efficient attacks, and also allows to carry out denial of service attacks and port scanning.
 Powered by <a href="https://www.bettercap.org"> bettercap</a> and <a href="https://www.bettercap.org"> nmap</a>.
@@ -30,36 +30,61 @@ Instalation
 =
 Dependencies will be automatically installed.
 
-    git clone https://github.com/LionSec/xerosploit
+    Add Debian Repository:
+    $ sudo nano /etc/apt/sources.list
+    
+    Add this:
+    deb http://deb.debian.org/debian/ buster main
+    
+    git clone https://github.com/FazalMahmood/xerosploit/
     cd xerosploit && sudo python install.py
     sudo xerosploit
+    
+    
+    
+    
+Manual Setup (If in any case above mathod does't work for you, try following steps):
+=   
+    Add Debian Repository:
+    $ sudo nano /etc/apt/sources.list
+
+    Add following link to "sources.list" file:
+    deb http://deb.debian.org/debian/ buster main
+
+    Install Dependencies:
+    $ sudo apt update && sudo apt install python-pip-whl=18.1-5 python-all-dev python-setuptools python-wheel python-pip
+
+    Download and Run Official Packages:
+    $ git clone https://github.com/LionSec/xerosploit
+    $ cd xerosploit && sudo python install.py
+    $ sudo apt install python3-terminaltables
+    $ sudo xerosploit
 
 
+Issues:
+=
+    Real-time Sniffing logs doesn't work out of the box, you need to run this command each time to monitor real-time logs:
+
+    See Logs File:
+    $ ls /opt/xerosploit/xerosniff
+
+    Monitor Logs in Real-Time: (change file name to your log file)
+    $ sudo tail -f /opt/xerosploit/xerosniff/LOG_FILE.log
+    
+    
 Tested on
 =
 
 <table>
     <tr>
-        <th>Operative system</th>
-        <th> Version </th>
-    </tr>
-    <tr>
-        <td>Ubuntu</td>
-        <td> 16.04  / 15.10 </td>
-    </tr>
-    <tr>
-        <td>Kali linux</td>
-        <td> Rolling / Sana</td>
-    </tr>
-    <tr>
-        <td>Parrot OS</td>
-        <td>3.1 </td>
+        <td>Kali Linux</td>
+        <td>2020.2 , 2020.3</td>
     </tr>
 </table>
 
 
 
-features 
+Features 
 =
 - Port scanning
 - Network mapping
@@ -83,16 +108,4 @@ I have some questions!
 
 Please visit https://github.com/LionSec/xerosploit/issues
 
-Donations
-=
-- Paypal : https://www.paypal.me/lionsec
-- Bitcoin : 12dM5kZjYMizNuXaqu7QZBLNDkXjfKYpRD
 
-
-Contact
-=
-- Website : https://neodrix.com
-- Youtube : https://youtube.com/inf98es
-- Facebook : https://facebook.com/in98
-- Twitter: @LionSec1
-- Email : informatic98es@gmail.com
