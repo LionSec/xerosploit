@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # Xerosploit banners
 
@@ -68,6 +68,7 @@ _    |  /  __/_  /    / /_/ /\033[1;36m____/ / __  /_/ /_  /  / /_/ /_  /  / /_ 
 /_/|_|  \___/ /_/     \____/ \033[1;36m/____/  _  .___/ /_/   \____/ /_/   \__/  \033[1;m
                              \033[1;36m        /_/                               \033[1;m     
 """
+
 
 def xe_header():
     headers = [header1, header2, header3, header4]
