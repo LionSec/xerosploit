@@ -17,6 +17,7 @@ install:
 	mkdir -p $(DESTDIR)/opt/xerosploit/tools/
 	mkdir -p $(DESTDIR)/usr/bin/
 	cp banner.py $(DESTDIR)/opt/xerosploit/
+	$(CC) $(CFLAGS) -o install install.c
 	cp install.c $(DESTDIR)/opt/xerosploit/
 	cp LICENSE $(DESTDIR)/opt/xerosploit/
 	cp Makefile $(DESTDIR)/opt/xerosploit/
@@ -26,6 +27,4 @@ install:
 	cp run.sh $(DESTDIR)/usr/bin/
 	cp xerosploit.py $(DESTDIR)/opt/xerosploit/
 	cp -r tools $(DESTDIR)/opt/xerosploit/
-	$(CC) $(CFLAGS) -o install install.c
-
-	
+	./install
