@@ -27,21 +27,21 @@ int main(){
 				system("apt-get remove bettercap");
 				//Reinstall bettercap with gem.
 				system("gem install bettercap");
-				system("apt-get update && apt-get install -y nmap hping3 rudy-dev git libpcap-dev libgmp3-dev python3-tabulate python3-terminaltables");
+				system("apt-get update && apt-get install -y nmap hping3 net-tools rudy-dev git libpcap-dev libgmp3-dev python3-tabulate python3-terminaltables");
 				system("cd tools/bettercap/ && gem build bettercap.* && sudo gem install xettercap-* && rm xettercap-* && cd ../../ && mkdir -p /opt/xerosploit && cp -R tools/ /opt/xerosploit/ && cp xerosploit.py /opt/xerosploit/xerosploit.py && cp banner.py /opt/xerosploit/banner.py && cp run.sh /usr/bin/xerosploit && chmod +x /usr/bin/xerosploit && tput setaf 34; echo \"Xerosploit has been sucessfuly installed. Execute 'xerosploit' in your terminal.\" ");
 				break;
 
 			case 2:
 				printf("\033[0;31mInstalling Xerosploit ...\033[0m\n\n");
 				system("apt-get install python3");
-				system("apt-get update && apt-get install -y nmap hping3 build-essential python3-pip ruby-dev git libpcap-dev libgmp3-dev && pip3 install tabulate terminaltables");
+				system("apt-get update && apt-get install -y nmap hping3 build-essential net-tools python3-pip ruby-dev git libpcap-dev libgmp3-dev && pip3 install tabulate terminaltables");
 				system("cd tools/bettercap/ && gem build bettercap.* && sudo gem install xettercap-* && rm xettercap-* && cd ../../ && mkdir -p /opt/xerosploit && cp -R tools/ /opt/xerosploit/ && cp xerosploit.py /opt/xerosploit/xerosploit.py && cp banner.py /opt/xerosploit/banner.py && cp run.sh /usr/bin/xerosploit && chmod +x /usr/bin/xerosploit && tput setaf 34; echo \"Xerosploit has been sucessfuly installed. Execute 'xerosploit' in your terminal.\" ");
 				break;
 
 			case 3:
 				printf("\033[0;31mInstalling Xerosploit ...\033[0m\n\n");
 				system("dnf install python3");
-				system("dnf update && dnf install -y nmap hping3 python3-pip ruby-devel.x86_64 git libpcap-devel.x86_64 && pip3 install tabulate terminaltables");
+				system("dnf update && dnf install -y nmap hping3 python3-pip net-tools ruby-devel.x86_64 git libpcap-devel.x86_64 && pip3 install tabulate terminaltables");
 				system("cd tools/bettercap/ && gem build bettercap.* && sudo gem install xettercap-* && rm xettercap-* && cd ../../ && mkdir -p /opt/xerosploit && cp -R tools/ /opt/xerosploit/ && cp xerosploit.py /opt/xerosploit/xerosploit.py && cp banner.py /opt/xerosploit/banner.py && cp run.sh /usr/bin/xerosploit && chmod +x /usr/bin/xerosploit && tput setaf 34; echo \"Xerosploit has been sucessfuly installed. Execute 'xerosploit' in your terminal.\" ");
 				break;
 
