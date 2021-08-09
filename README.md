@@ -47,7 +47,7 @@ Tested on
     </tr>
     <tr>
         <td>Parrot OS</td>
-        <td>3.1 </td>
+        <td>4.11.2 </td>
     </tr>
 </table>
 
