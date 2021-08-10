@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/badge/Python-3-blue.svg)]()
+[![PyPI](https://img.shields.io/badge/Language-Python3-blue.svg)]()
 [![Build](https://img.shields.io/badge/Supported_OS-linux-black.svg)]()
 
 Xerosploit
