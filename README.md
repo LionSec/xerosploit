@@ -1,15 +1,16 @@
-
-[![Version](https://img.shields.io/badge/Xerosploit-Version_1.0-brightgreen.svg?maxAge=259200)]()
-[![PyPI](https://img.shields.io/badge/Python-2.7-blue.svg)]()
-[![Build](https://img.shields.io/badge/Supported_OS-linux-orange.svg)]()
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+<div align="center">
+<br>
+<img src="https://cdn.cyberpunk.rs/wp-content/uploads/2019/12/xerosploit_mitm_bg.jpg" width="1000px" height="400px">
+<br>
+<br>
+<img src="https://img.shields.io/badge/Language-Python3-blue.svg">
+<img src="https://img.shields.io/badge/Supported_OS-linux-black.svg">
+<br>
+</div>
 
 Xerosploit
 =
 Xerosploit is a penetration testing toolkit whose goal is to perform man in the middle attacks for testing purposes. It brings various modules that allow to realise efficient attacks, and also allows to carry out denial of service attacks and port scanning.
-Powered by <a href="https://www.bettercap.org"> bettercap</a> and <a href="https://www.bettercap.org"> nmap</a>.
-
-![](http://i.imgur.com/bbr48Ep.png)
 
 Dependencies
 =
@@ -30,8 +31,8 @@ Instalation
 =
 Dependencies will be automatically installed.
 
-    git clone https://github.com/LionSec/xerosploit
-    cd xerosploit && sudo python install.py
+    git clone https://github.com/hackerW1/xerosploit-python3
+    cd xerosploit-python3 && sudo python3 install.py
     sudo xerosploit
 
 
@@ -53,7 +54,7 @@ Tested on
     </tr>
     <tr>
         <td>Parrot OS</td>
-        <td>3.1 </td>
+        <td>4.11.2 </td>
     </tr>
 </table>
 
@@ -74,25 +75,9 @@ features
 - Drifnet
 - Webpage defacement and more ...
 
-Demonstration
+
+## UPDATES
+
+All Errors Fixed
 =
-https://www.youtube.com/watch?v=35QUrtZEV9U
-
-I have some questions!
-=
-
-Please visit https://github.com/LionSec/xerosploit/issues
-
-Donations
-=
-- Paypal : https://www.paypal.me/lionsec
-- Bitcoin : 12dM5kZjYMizNuXaqu7QZBLNDkXjfKYpRD
-
-
-Contact
-=
-- Website : https://neodrix.com
-- Youtube : https://youtube.com/inf98es
-- Facebook : https://facebook.com/in98
-- Twitter: @LionSec1
-- Email : informatic98es@gmail.com
+- LionSec's xerosploit has been old so this one can help those who are getting errors
