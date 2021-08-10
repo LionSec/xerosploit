@@ -2,8 +2,8 @@
 <br>
 <img src="https://cdn.cyberpunk.rs/wp-content/uploads/2019/12/xerosploit_mitm_bg.jpg">
 <br>
-[![PyPI](https://img.shields.io/badge/Language-Python3-blue.svg)]()
-[![Build](https://img.shields.io/badge/Supported_OS-linux-black.svg)]()
+<img src="https://img.shields.io/badge/Language-Python3-blue.svg">
+<img src="https://img.shields.io/badge/Supported_OS-linux-black.svg">
 <br>
 </div>
 
