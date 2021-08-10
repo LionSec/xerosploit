@@ -1,6 +1,6 @@
 <div align="center">
 <br>
-<img src="https://cdn.cyberpunk.rs/wp-content/uploads/2019/12/xerosploit_mitm_bg.jpg" width="500px" height="100px">
+<img src="https://cdn.cyberpunk.rs/wp-content/uploads/2019/12/xerosploit_mitm_bg.jpg" width="1000px" height="400px">
 <br>
 <br>
 <img src="https://img.shields.io/badge/Language-Python3-blue.svg">
