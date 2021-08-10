@@ -70,7 +70,7 @@ def main():
 			print (xe_header())
 
 			print ("""
-[+]═══════════[ Author : @LionSec1 \033[1;36m_-\|/-_\033[1;m Website: www.neodrix.com ]═══════════[+]
+[+]═══════════[ Author : @hackerW1 \033[1;36m_-\|/-_\033[1;m YouTube: TechOtaku ]═══════════[+]
 
                       [ Powered by Bettercap and Nmap ]""")
 
