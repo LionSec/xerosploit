@@ -1,6 +1,6 @@
 
 [![Version](https://img.shields.io/badge/Xerosploit-Version_1.0-brightgreen.svg?maxAge=259200)]()
-[![PyPI](https://img.shields.io/badge/Python-2.7-blue.svg)]()
+[![PyPI](https://img.shields.io/badge/Python-3.9-blue.svg)]()
 [![Build](https://img.shields.io/badge/Supported_OS-linux-orange.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
@@ -30,8 +30,8 @@ Instalation
 =
 Dependencies will be automatically installed.
 
-    git clone https://github.com/LionSec/xerosploit
-    cd xerosploit && sudo python install.py
+    git clone https://github.com/shivanshjoshi28/xerosploit
+    cd xerosploit && sudo python3 install.py
     sudo xerosploit
 
 
@@ -45,7 +45,7 @@ Tested on
     </tr>
     <tr>
         <td>Ubuntu</td>
-        <td> 16.04  / 15.10 </td>
+        <td> 20.04 / 16.04  / 15.10 </td>
     </tr>
     <tr>
         <td>Kali linux</td>
@@ -96,3 +96,10 @@ Contact
 - Facebook : https://facebook.com/in98
 - Twitter: @LionSec1
 - Email : informatic98es@gmail.com
+
+
+# UPDATES DONE
+
+## All Errors Fixed
+
+LionSec/ xerosploit was not compatible with the new version of Python3. This can be helpful to them who are getting errors related to pip, raw_input.
