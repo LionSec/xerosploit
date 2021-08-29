@@ -100,6 +100,6 @@ Contact
 
 ## UPDATES DONE
 
-#All Errors Fixed
+# All Errors Fixed
 
-LionSec/xerosploit was not compatible with the new version of Python3. This can be helpful to them who are getting errors related to pip,raw_input.
+LionSec/ xerosploit was not compatible with the new version of Python3. This can be helpful to them who are getting errors related to pip, raw_input.
