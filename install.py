@@ -42,7 +42,7 @@ def main():
 1) Ubuntu / Kali linux / Others
 2) Parrot OS
 """)
-	system0 = raw_input(">>> ")
+	system0 = input(">>> ")
 	if system0 == "1":
 		print("\033[1;34m\n[++] Installing Xerosploit ... \033[1;m")
 		install = os.system("apt-get update && apt-get install -y nmap hping3 build-essential python-pip ruby-dev git libpcap-dev libgmp3-dev && pip install tabulate terminaltables")
