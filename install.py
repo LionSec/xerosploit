@@ -60,6 +60,7 @@ Python Version You Want To Install On (like 3.6)
 		install1 = os.system("""cd tools/bettercap/ && gem build bettercap.* && sudo gem install xettercap-* && rm xettercap-* && cd ../../ && mkdir -p /opt/xerosploit && cp -R tools/ /opt/xerosploit/ && cp xerosploit.py /opt/xerosploit/xerosploit.py && cp banner.py /opt/xerosploit/banner.py && cp run.sh /usr/bin/xerosploit && chmod +x /usr/bin/xerosploit && tput setaf 34; echo "Xerosploit has been sucessfuly instaled. Execute 'xerosploit' in your terminal." """)	
 		
 		if py_ver[0] == "3":
+			os.system("sudo apt-get install 2to3")
 			os.system("sudo 2to3 -w xerosploit.py")
 			
 			run_file = open("run.sh","r")
@@ -85,6 +86,8 @@ Python Version You Want To Install On (like 3.6)
 		install1 = os.system("""cd tools/bettercap/ && gem build bettercap.* && sudo gem install xettercap-* && rm xettercap-* && cd ../../ && mkdir -p /opt/xerosploit && cp -R tools/ /opt/xerosploit/ && cp xerosploit.py /opt/xerosploit/xerosploit.py && cp banner.py /opt/xerosploit/banner.py && cp run.sh /usr/bin/xerosploit && chmod +x /usr/bin/xerosploit && tput setaf 34; echo "Xerosploit has been sucessfuly instaled. Execute 'xerosploit' in your terminal." """)
 		
 		if py_ver[0] == "3":
+			os.system("sudo apt-get install 2to3")
+
 			os.system("sudo 2to3 -w xerosploit.py")	
 			
 			run_file = open("run.sh","r")
