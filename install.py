@@ -42,12 +42,38 @@ def main():
 1) Ubuntu / Kali linux / Others
 2) Parrot OS
 """)
-	system0 = input(">>> ")
+	system0 = raw_input(">>> ")
+	
+	py_ver = ""
+	
+	while py_ver == "":
+		print("""
+Python Version You Want To Install On (like 3.6)
+""")
+		py_ver = raw_input(">>> ")
+
 	if system0 == "1":
 		print("\033[1;34m\n[++] Installing Xerosploit ... \033[1;m")
-		install = os.system("apt-get update && apt-get install -y nmap hping3 build-essential python-pip ruby-dev git libpcap-dev libgmp3-dev && pip install tabulate terminaltables")
+		install = os.system("apt-get update && apt-get install -y nmap hping3 build-essential python-pip ruby-dev git libpcap-dev libgmp3-dev")
 
 		install1 = os.system("""cd tools/bettercap/ && gem build bettercap.* && sudo gem install xettercap-* && rm xettercap-* && cd ../../ && mkdir -p /opt/xerosploit && cp -R tools/ /opt/xerosploit/ && cp xerosploit.py /opt/xerosploit/xerosploit.py && cp banner.py /opt/xerosploit/banner.py && cp run.sh /usr/bin/xerosploit && chmod +x /usr/bin/xerosploit && tput setaf 34; echo "Xerosploit has been sucessfuly instaled. Execute 'xerosploit' in your terminal." """)	
+		
+		if py_ver[0] == "3":
+			os.system("sudo apt-get install 2to3")
+			os.system("sudo 2to3 -w xerosploit.py")
+			
+			run_file = open("run.sh","r")
+			r_con = run_file.read()
+			run_file.close()
+			
+			run_file = open("run.sh","w")
+			run_file.write(r_con.replace("python","python3"))
+			run_file.close()
+			
+		os.system(f"sudo pip install -t /usr/lib/python{py_ver}/dist-packages/ pillow")
+		os.system(f"sudo pip install -t /usr/lib/python{py_ver}/dist-packages/ tabulate")
+		os.system(f"sudo pip install -t /usr/lib/python{py_ver}/dist-packages/ terminaltables")
+	
 	elif system0 == "2":
 		print("\033[1;34m\n[++] Installing Xerosploit ... \033[1;m")
 
@@ -55,9 +81,25 @@ def main():
 		bet_re_ins = os.system("gem install bettercap") # Reinstall bettercap with gem.
 
 		install = os.system("apt-get update && apt-get install -y nmap hping3 ruby-dev git libpcap-dev libgmp3-dev python-tabulate python-terminaltables")
-
+		
 		install1 = os.system("""cd tools/bettercap/ && gem build bettercap.* && sudo gem install xettercap-* && rm xettercap-* && cd ../../ && mkdir -p /opt/xerosploit && cp -R tools/ /opt/xerosploit/ && cp xerosploit.py /opt/xerosploit/xerosploit.py && cp banner.py /opt/xerosploit/banner.py && cp run.sh /usr/bin/xerosploit && chmod +x /usr/bin/xerosploit && tput setaf 34; echo "Xerosploit has been sucessfuly instaled. Execute 'xerosploit' in your terminal." """)
 		
+		if py_ver[0] == "3":
+			os.system("sudo apt-get install 2to3")
+
+			os.system("sudo 2to3 -w xerosploit.py")	
+			
+			run_file = open("run.sh","r")
+			r_con = run_file.read()
+			run_file.close()
+			
+			run_file = open("run.sh","w")
+			run_file.write(r_con.replace("python","python3"))
+			run_file.close()
+			
+		os.system(f"sudo pip install -t /usr/lib/python{py_ver}/dist-packages/ pillow")
+		os.system(f"sudo pip install -t /usr/lib/python{py_ver}/dist-packages/ tabulate")
+		os.system(f"sudo pip install -t /usr/lib/python{py_ver}/dist-packages/ terminaltables")
 
 	else:
 		print("Please select the option 1 or 2")
