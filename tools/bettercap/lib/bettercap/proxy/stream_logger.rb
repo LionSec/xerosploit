@@ -86,7 +86,7 @@ class StreamLogger
       name, value = v.split('=')
       name ||= ''
       value ||= ''
-      msg << "  #{name.blue} : #{URI.unescape(value).yellow}\n"
+      msg << "  #{name.blue} : #{URI.decode_www_form_component(value).yellow}\n"
     end
     msg
   end
