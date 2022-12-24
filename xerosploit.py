@@ -23,7 +23,6 @@
 #---------------------------------------------------------------------------#
 
 import os
-from terminaltables import DoubleTable
 from tabulate import tabulate
 from banner import xe_header
 import sys, traceback
