@@ -13,17 +13,16 @@ Powered by <a href="https://www.bettercap.org"> bettercap</a> and <a href="https
 
 Dependencies
 =
+```bash
+sudo apt install nmap hping3 build-essential ruby-dev libpcap-dev libgmp3-dev
+```
 
-- nmap 
-- hping3 
-- build-essential 
-- ruby-dev 
-- libpcap-dev 
-- libgmp3-dev
-- tabulate 
-- terminaltables
-
-
+```bash
+python3 -m virtualenv .venv --python=2
+source /.venv/bin/activate.bash
+python -m pip install tabulate terminaltables
+./run.sh
+```
 
 
 Instalation
