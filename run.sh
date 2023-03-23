@@ -21,6 +21,9 @@
 #                                                                           #
 #---------------------------------------------------------------------------#
 
-python /opt/xerosploit/xerosploit.py
+directory=$(pwd)
 
+vpython="${directory}/.venv/bin/python"
+
+sudo ${vpython} ${directory}/xerosploit.py
 

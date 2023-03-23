@@ -3,7 +3,7 @@
 # Xerosploit banners
 
 
-#---------------------------------------------------------------------------#
+# ---------------------------------------------------------------------------#
 # This file is part of Xerosploit.                                          #
 # Xerosploit is free software: you can redistribute it and/or modify        #
 # it under the terms of the GNU General Public License as published by      #
@@ -18,11 +18,11 @@
 # You should have received a copy of the GNU General Public License         #
 # along with Xerosploit.  If not, see <http://www.gnu.org/licenses/>.       #
 #                                                                           #
-#---------------------------------------------------------------------------#
+# ---------------------------------------------------------------------------#
 #                                                                           #
 #        Copyright © 2019 Neodrix (www.neodrix.com)                         #
 #                                                                           #
-#---------------------------------------------------------------------------#
+# ---------------------------------------------------------------------------#
 
 
 import random
@@ -68,6 +68,7 @@ _    |  /  __/_  /    / /_/ /\033[1;36m____/ / __  /_/ /_  /  / /_/ /_  /  / /_ 
 /_/|_|  \___/ /_/     \____/ \033[1;36m/____/  _  .___/ /_/   \____/ /_/   \__/  \033[1;m
                              \033[1;36m        /_/                               \033[1;m     
 """
+
 
 def xe_header():
     headers = [header1, header2, header3, header4]
